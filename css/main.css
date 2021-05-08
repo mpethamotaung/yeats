@@ -156,9 +156,33 @@ img {
 
     section{
 
-        margin: 0 15em;
+        margin: 0 3em;
+    }
+
+    .form-container {
+        margin: 2em -4em 0;
     }
 }
 
 /*desktop*/
-@media(){}
+@media(min-width: 1080px){
+    
+    .hero-bg {
+        text-align: left;
+    }
+
+    .hero-bg p {
+        font-weight: lighter;
+        margin: 0 0 3em;
+    }
+
+    .hero-bg section{
+        width: 60%;
+    }
+
+    .form-container{
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: 1.5em;
+    }
+}
