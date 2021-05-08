@@ -156,6 +156,10 @@ img {
     text-align: center;
 }
 
+.bottom-row {
+    padding: .1em;
+}
+
 /*media queries for different devices*/
 
 /*tablet*/
