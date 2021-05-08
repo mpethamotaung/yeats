@@ -7,6 +7,8 @@ body {
 
 .hero-bg {
     background-image: url(../images/bg.jpeg);
+    background-position: ;
+    background-size: cover;
     color: white;
     text-align: center;
     padding-bottom: 4em;
@@ -36,4 +38,74 @@ h1 span{
     text-transform: uppercase;
     display: block;
     font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
 }
+
+h1 span::before {
+    content: '';
+    position: absolute;
+    width: 3em;
+    background: #00BFFF;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+.hero-bg p {
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+.form-container {
+    background-color: white;
+    margin: 2em -1em 0;
+    border-radius: .3em;
+    padding: 1.5em;
+}
+
+label {
+    color: #2D7D98;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    border: 1px solid #606060;
+    border-radius: 3em;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 1.5em;
+}
+
+.form-container p {
+    color: #606060;
+    margin: .5em 0;
+    font-weight: lighter;
+    font-size: .9em;
+}
+
+input[type="button"] {
+    background-color: #F89104;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: .5em;
+    font-size: 1.3em;
+    cursor:pointer;
+    margin-top: 1.5em;
+}
+
+input[type="button"]:hover {
+    background-color: #db8103;
+    font-weight: normal;
+    
+}
+
+
