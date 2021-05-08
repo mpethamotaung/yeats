@@ -141,10 +141,24 @@ h2::before {
 
 img {
     width: 100%;
-    margin: 3em 1em;
+    background-size: contain;
 }
 
 .right-col p {
     line-height: var(--leading);
     font-weight: lighter;
 }
+
+/*media queries for different devices*/
+
+/*tablet*/
+@media(min-width: 720px){
+
+    section{
+
+        margin: 0 15em;
+    }
+}
+
+/*desktop*/
+@media(){}
