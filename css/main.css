@@ -67,8 +67,8 @@ h1 span::before {
 
 .form-container {
     background-color: white;
-    margin: 2em -1em 0;
-    border-radius: .3em;
+    margin: 2em 1em 0;
+    border-radius: 1.5em;
     padding: 1.5em;
 }
 
@@ -149,6 +149,13 @@ img {
     font-weight: lighter;
 }
 
+.footer {
+    background-color: #090909;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+}
+
 /*media queries for different devices*/
 
 /*tablet*/
@@ -184,5 +191,29 @@ img {
         margin: 2em 0 0;
         padding: 2em;
         border-radius: 1.5em;
+        box-shadow: 10px 10px 10px rgba(0,0,0, .3);
+    }
+
+    form{
+        display: flex;
+    }
+
+    .form-left{
+        width: 75%;
+    }
+
+    label {
+        margin: 0;
+    }
+
+    input[type="button"]{
+        height: fit-content;
+        font-size: 1.5em;
+        margin: 1em 0 0 1em;
+        padding: 1em 0;
+        width: 30%;
+    }
+    .hero-bg p {
+        margin: 1em;
     }
 }
