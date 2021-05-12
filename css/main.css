@@ -52,8 +52,8 @@ h1 span{
 h1 span::before {
     content: '';
     position: absolute;
-    width: 3em;
-    background: #00BFFF;
+    width: 6em;
+    background: #03af03;
     height: .4em;
     bottom: 0;
     z-index: -1;
@@ -92,8 +92,8 @@ input[type="text"] {
 .form-container p {
     color: #606060;
     margin: .5em 0;
-    font-weight: lighter;
     font-size: .9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 input[type="button"] {
@@ -132,7 +132,7 @@ h2::before {
     content: '';
     position: absolute;
     width: 6em;
-    background: #00BFFF;
+    background: #03af03;
     height: .4em;
     bottom: 0;
     z-index: -1;
@@ -146,7 +146,7 @@ img {
 
 .right-col p {
     line-height: var(--leading);
-    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .footer {
@@ -220,4 +220,38 @@ img {
     .hero-bg p {
         margin: 1em;
     }
+
+    section.organic {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "content bowl";
+    }
+
+    .right-col {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+
+    .right-col p{
+        font-weight: lighter;
+    }
+
+    img {
+        grid-area: bowl
+    }
+
+    h2 {
+        margin:0;
+    }
+}
+
+/* Animations */
+.top{
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    
 }
